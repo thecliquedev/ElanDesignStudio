@@ -168,17 +168,17 @@
 
 .area1 {
   grid-area: area1;
-  background: url(../img/elan/159463361_3695658473883966_1587180516645483197_n.jpg);
+  background: url(../img/elan/area1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .area2 {
   grid-area: area2;
-  background: url(../img/elan/area2.jpg);
+  background: url(../img/elan/area_2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-position: right;
 }
 
 .area3 {
@@ -295,10 +295,10 @@
 
 .grid1 {
   grid-area: grid1;
-  background: url(../img/elan/346248429_961113178255599_5414975094276440003_n.jpeg.jpg);
+  background: url(../img/elan/grid1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-position: top;
 }
 
 .grid2 {
