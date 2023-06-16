@@ -1,0 +1,416 @@
+.btn-collection {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  border-radius: 50px;
+  bottom: 35%;
+  margin-left: 40px;
+  position: absolute;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  padding: 10px 20px;
+}
+.btn-collection:hover {
+  color: #d2ab68;
+  border: 1px solid #d2ab68;
+}
+
+.style-month-text h1 {
+  font-size: 5rem;
+  text-align: start;
+  letter-spacing: 2px;
+  font-weight: normal;
+  margin: 10px 50px;
+  padding: 0px 0px 0px 0px;
+}
+.style-month-text p {
+  font-size: 1.4rem;
+  text-align: start;
+  margin: 10px 50px;
+  padding: 0px 0px 0px 0px;
+}
+.style-month-text .btn-read-more {
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  padding: 6px 20px;
+  color: black;
+  border: 1px solid black;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+.style-month-text .btn-read-more:hover {
+  color: #d2ab68;
+  border: 1px solid #000;
+}
+
+.style-month-img {
+  width: 500px;
+  height: 1000px;
+  border: 2px solid black;
+  border-radius: 50%;
+}
+
+.style-month-img img {
+  padding: 20px 1px;
+  width: 500px;
+  height: 500px;
+}
+
+.btn-send {
+  margin: 0 auto;
+  padding: 5px 20px;
+  border-radius: 5px;
+}
+
+.contact-text {
+  position: absolute;
+  bottom: 5%;
+  color: white;
+  z-index: 2;
+  font-size: 4rem;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 30px;
+  line-height: 0.9;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.contact-text span {
+  -webkit-text-stroke: 0.6px white;
+  color: transparent;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.navbar-mobile {
+  display: none;
+}
+
+.navbar-mini {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  background-color: transparent;
+}
+
+.navbar-mini div div {
+  width: 70%;
+  justify-content: space-around;
+  background-color: #d2ab68;
+  color: white;
+  padding: 5px 50px;
+  border-radius: 0px 0px 150px 150px;
+}
+
+.navbar-mini div div .nav-link {
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.footer-social-links {
+  flex-direction: column;
+}
+
+.owl-item.active.center {
+  opacity: 1;
+}
+
+.testimonial-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonial-carousel .owl-nav {
+  position: absolute;
+  top: 30%;
+  display: flex;
+  font-size: 2rem;
+  color: #d2ab68;
+  width: 60%;
+  justify-content: space-around;
+  row-gap: 100px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
+
+/* grid */
+.gallery-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 300px 300px 300px 300px;
+  grid-template-rows: 75px 75px 75px 75px 75px 75px 75px 75px;
+  gap: 15px 20px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "area1 area1 area2 area4"
+    "area1 area1 area2 area4"
+    "area1 area1 area2 area4"
+    "area1 area1 area2 area4"
+    "area1 area1 area3 area4"
+    "area1 area1 area3 area5"
+    "area1 area1 area3 area5"
+    "area1 area1 area3 area5";
+}
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: repeat(8, 75px);
+  gap: 15px 20px;
+  grid-auto-flow: row;
+}
+
+.gallery-container div img {
+  max-width: 300px;
+}
+
+.area1 {
+  grid-area: area1;
+  background: url(../img/elan/159463361_3695658473883966_1587180516645483197_n.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.area2 {
+  grid-area: area2;
+  background: url(../img/elan/area2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.area3 {
+  grid-area: area3;
+  background: url(../img/elan/gallery_area3.jpg);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.area4 {
+  grid-area: area4;
+  background: url(../img/elan/gallery_area4.jpg);
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+.area5 {
+  grid-area: area5;
+  background: url(../img/elan/gallery_area5.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 768px) {
+  .gallery-container {
+    grid-template-rows: repeat(5, 300px);
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    grid-template-areas:
+      "area1 area1 area1 area1"
+      "area2 area2 area2 area2"
+      "area3 area3 area3 area3"
+      "area4 area4 area4 area4"
+      "area5 area5 area5 area5";
+  }
+  .area1,
+  .area2,
+  .area3,
+  .area4,
+  .area5 {
+    background-size: contain;
+    background-position: center;
+  }
+  .style-month-text h1 {
+    font-size: 2rem;
+  }
+  .style-month-img {
+    width: 80vw;
+    height: 80vw;
+    border: 2px solid black;
+    border-radius: 50%;
+  }
+  .style-month-img img {
+    width: 80vw;
+    height: 500px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .gallery-container {
+    grid-template-rows: repeat(5, 600px);
+    grid-template-areas:
+      "area1 area1 area1 area1"
+      "area2 area2 area2 area2"
+      "area3 area3 area3 area3"
+      "area4 area4 area4 area4"
+      "area5 area5 area5 area5";
+  }
+  .area1,
+  .area2,
+  .area3,
+  .area4,
+  .area5 {
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .gallery-container {
+    grid-template-areas:
+      "area1 area1 area2 area4"
+      "area1 area1 area2 area4"
+      "area1 area1 area2 area4"
+      "area1 area1 area2 area4"
+      "area1 area1 area3 area4"
+      "area1 area1 area3 area5"
+      "area1 area1 area3 area5"
+      "area1 area1 area3 area5";
+  }
+}
+
+.gallery-container2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 200px 200px 200px 200px 200px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-rows: 120px 120px 120px 120px 120px 120px 120px 120px;
+  gap: 15px 20px;
+  padding: 15px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "grid1 grid1 grid3 grid3 grid3"
+    "grid1 grid1 grid3 grid3 grid3"
+    "grid1 grid1 grid3 grid3 grid3"
+    "grid1 grid1 grid3 grid3 grid3"
+    "grid2 grid2 grid3 grid3 grid3"
+    "grid2 grid2 grid3 grid3 grid3"
+    "grid2 grid2 grid3 grid3 grid3"
+    "grid2 grid2 grid4 grid4 grid4";
+}
+
+.grid1 {
+  grid-area: grid1;
+  background: url(../img/elan/346248429_961113178255599_5414975094276440003_n.jpeg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.grid2 {
+  grid-area: grid2;
+  background: url(../img/elan/gallery1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.grid3 {
+  grid-area: grid3;
+  background: url(../img/elan/159463361_3695658473883966_1587180516645483197_n.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.grid4 .btn{
+  border: 1px solid black;
+  border-radius: 30px;
+  padding: 10px 20px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .gallery-container2 {
+    grid-template-rows: repeat(4, 600px);
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    grid-template-areas:
+      "grid1 grid1 grid1 grid1"
+      "grid2 grid2 grid2 grid2"
+      "grid3 grid3 grid3 grid3"
+      "grid4 grid4 grid4 grid4";
+  }
+  .gallery-container, .gallery-container2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .area4{
+    max-height: 100px;
+    min-width: 150px;
+  }
+  .area1,
+  .area2,
+  .area3,
+  .area4,
+  .area5,
+  .grid1,
+  .grid2,
+  .grid3,
+  .grid4,
+  .grid5 {
+    width: 600px;
+    height: 600px;
+
+    background-size: contain;
+    background-position: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery-container, .gallery-container2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .area1,
+  .area2,
+  .area3,
+  .area4,
+  .area5,
+  .grid1,
+  .grid2,
+  .grid3,
+  .grid4,
+  .grid5 {
+    width: 90vw;
+    height: 300px;
+    background-size: contain;
+    background-position: center;
+  }
+  .grid4{
+    max-height: 100px;
+    min-width: 150px;
+  }
+  .grid4-none{
+    display: none;
+  }
+}
+
+
+@media screen and (max-width: 910px) {
+  .nav-title {
+    display: none;
+  }
+  .navbar-mobile {
+    display: flex;
+  }
+  .navbar-mini {
+    display: none;
+  }
+  .style-month-img {
+    margin: 0 auto;
+  }
+  .footer-social-links {
+    flex-direction: row;
+  }
+}
