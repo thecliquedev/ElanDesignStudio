@@ -188,6 +188,7 @@ h6,
   .header-carousel .owl-carousel-item {
     position: relative;
     min-height: 500px;
+    object-position: right;
   }
 
   .header-carousel .owl-carousel-item img {

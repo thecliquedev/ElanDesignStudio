@@ -136,6 +136,11 @@
   right: 0;
 }
 
+.style-month-img-div{
+  max-height: 500px;
+  height: 500px;
+}
+
 /* grid */
 .gallery-container {
   display: grid;
@@ -363,6 +368,12 @@
     background-size: contain;
     background-position: center;
   }
+  .grid4-none{
+    display: none;
+  }
+  .style-month-img{
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 768px) {
@@ -393,6 +404,12 @@
   }
   .grid4-none{
     display: none;
+  }
+  .btn-collection{
+    display: none;
+  }
+  .style-month-img-div{
+    height: 300px;
   }
 }
 
