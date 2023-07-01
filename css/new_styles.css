@@ -329,7 +329,13 @@
   text-transform: uppercase;
 }
 
+td{
+  padding: 10px;
+}
 
+.show-text{
+  display: none;
+}
 
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -429,5 +435,11 @@
   }
   .footer-social-links {
     flex-direction: row;
+  }
+  .hide-text{
+    display: none !important;
+  }
+  .show-text{
+    display: block;
   }
 }
