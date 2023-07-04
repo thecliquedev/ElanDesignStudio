@@ -116,19 +116,39 @@
   opacity: 1;
 }
 
+.header-carousel .owl-carousel-item img{
+  height: 100%;
+  object-fit: cover;
+  object-position: 0;
+}
+
+.testimonial-carousel .owl-item img{
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
 .testimonial-carousel {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: nowrap;
+}
+
+.testimonial-item{
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .testimonial-carousel .owl-nav {
   position: absolute;
-  top: 30%;
+  top: 25%;
   display: flex;
   font-size: 2rem;
   color: #d2ab68;
-  width: 60%;
+  width: 70%;
   justify-content: space-around;
   row-gap: 100px;
   margin: 0 auto;
@@ -295,7 +315,7 @@
     "grid2 grid2 grid3 grid3 grid3"
     "grid2 grid2 grid3 grid3 grid3"
     "grid2 grid2 grid3 grid3 grid3"
-    "grid2 grid2 grid4 grid4 grid4";
+    "grid2 grid2 grid3 grid3 grid3";
 }
 
 .grid1 {
@@ -417,6 +437,19 @@ td{
   .style-month-img-div{
     height: 300px;
   }
+  
+  .testimonial-carousel .owl-item img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin: 0 auto;
+    border-radius: 50%;
+  }
+
+  .testimonial-carousel .owl-dots{
+    display: none;
+  }
+
 }
 
 
@@ -441,5 +474,9 @@ td{
   }
   .show-text{
     display: block;
+  }
+  .testimonial-carousel .owl-nav{
+    justify-content: space-between;
+    width: 100%;
   }
 }
